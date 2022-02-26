@@ -50,7 +50,7 @@ function doComplete() {
 }
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwSsuq53pvciZjjghnJSBZ57Ge7DUohz8f1H36v8DQ778bqqgrybzf45miMOyZ1dNsT/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyfvh9Jui3gje8A5oGVipxH5n5poGRkDP07ev437ZYZdPVWijpSOX_phf5-CQDdXtaKcw/exec';
 
 const loading = document.querySelector('.js-loading');
 const successMessage = document.querySelector('.js-success-message');
