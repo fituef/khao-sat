@@ -1,0 +1,354 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <title>PHIẾU KHẢO SÁT Ý KIẾN CÁN BỘ GIẢNG VIÊNVỀ CHUẨN ĐẦU RA & CHƯƠNG TRÌNH ĐÀO TẠO - FIT@UEF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta property="og:image" content="https://raw.githubusercontent.com/fituef/thuongmaidientu/master/images/bg.jpg">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="keywords" content="chào đón tân sinh viên K20, sinh viên thương mại điện tử K2020" />
+    <meta name="description" content="Chương trình chào đón tân sinh viên Ngành thương mại mại điện tử Khóa 2020 - 2024 - Khoa công nghệ thông tin, Trường Đại học Kinh tế - Tài Chính Tp.HCM - UEF'" />
+    <meta charset="utf-8">
+    <style>
+         :root {
+            --accent: #F18260;
+            --purple: #252431;
+        }
+        
+        .form-container {
+            position: relative;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 350px;
+            min-height: 300px;
+            margin: 0 auto;
+            box-shadow: 0 10px 50px 0 #ccc;
+            margin-bottom: 2rem;
+        }
+        
+        .is-hidden {
+            display: none !important;
+        }
+        
+        a {
+            display: block;
+            margin: 0 auto;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            text-align: center;
+            margin-left: 5px;
+            line-height: 20px;
+            font-size: 16px;
+        }
+        
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes dash {
+            0% {
+                stroke-dasharray: 1, 200;
+                stroke-dashoffset: 0;
+            }
+            50% {
+                stroke-dasharray: 89, 200;
+                stroke-dashoffset: -35;
+            }
+            100% {
+                stroke-dasharray: 89, 200;
+                stroke-dashoffset: -124;
+            }
+        }
+        
+        .loading {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .loading-spinner svg {
+            position: relative;
+            animation: rotate 2s linear infinite;
+            height: 50px;
+            width: 50px;
+        }
+        
+        .loading-spinner circle {
+            stroke: var(--accent);
+            stroke-dasharray: 1, 200;
+            stroke-dashoffset: 0;
+            stroke-linecap: round;
+            animation: dash 1.5s ease-in-out infinite;
+        }
+        
+        p.js-success-message {
+            text-align: center;
+            font-size: 20px;
+            padding: 10px 0px;
+        }
+        
+        table.dtable th,
+        table.dtable td,
+        table.ntable th,
+        table.ntable td {
+            border: 1px #ccc solid;
+            border-collapse: collapse;
+            padding: 5px;
+            font-weight: normal;
+        }
+        
+        TABLE {
+            margin-bottom: 5px;
+        }
+        
+        table.dtable,
+        table.ntable {
+            border: 1px #ccc solid;
+            border-collapse: collapse;
+            padding: 5px;
+            width: 100%;
+        }
+        
+        TH {
+            background: #f5f5f5;
+            font-style: normal;
+            color: #167ec2;
+        }
+        
+        TD {
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        
+        .btn-tuyendung {
+            float: right;
+            border: 2px solid #ae3c33;
+            border-radius: 10px;
+            padding: 10px;
+            color: red;
+        }
+        
+        .stt {
+            font-weight: bold;
+            color: white;
+        }
+        
+        #hdth {
+            height: 50px;
+        }
+        
+        #hdth th {
+            color: white;
+            background: #ed1b2f;
+        }
+        
+        .trchan {
+            background-color: #0a8075;
+        }
+        
+        .trle {
+            background-color: #009688;
+        }
+        
+        .trchan a,
+        .trle a {
+            color: white;
+        }
+        
+        h3 {
+            font-size: 20px;
+        }
+        .preference label {
+            display: inline;
+            justify-content: space-between;
+            width: 20px;
+            margin: 1.5rem;
+        }
+        .preference { 
+            margin: 5px;
+        }
+    </style>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-google-sheet-to-json.min.js"></script>
+</head>
+
+<body>
+    <img src="images/bg.jpg" style="max-width: 100% !important;" />
+    <div id="container">
+        <div id="main-content" style="padding-left:5px; padding-right:5px">
+            <H5 style="font-size: 1.2em;text-align:justify; color: #0065b3; font-weight: bold; margin-bottom: 5px; margin-top: 10px;">Nhằm không ngừng cải tiến và nâng cao chất lượng giáo dục đào tạo, trường Đại học UEF tổ chức khảo sát ý kiến của giảng viên về chuẩn đầu ra và chương trình đào tạo của ngành mà quý Thầy/Cô đang giảng dạy. Những thông tin quý Thầy/Cô cung cấp trong phiếu khảo sát này sẽ giúp Khoa có thêm cơ sở để có những điều chỉnh, cải tiến về chuẩn đầu ra và chương trình đào tạo mà Khoa đã xây dựng. Chúng tôi xin cam đoan những thông tin trả lời trong phiếu khảo sát này sẽ được giữ bí mật và sử dụng đúng mục đích nêu trên. Xin chân thành cảm ơn sự đóng góp quý giá của quý Thầy/Cô.</H5>
+            <hr /> 
+            <form name="submit-to-google-sheet" class="js-showupdate">
+                <h2 style="color: #0065b3; font-weight: bold; margin-bottom: 5px;margin-top: 10px;">A. VỀ CHUẨN ĐẦU RA</h2>
+                <h5 style="text-align: justify; font-size: 1.2em">Chuẩn đầu ra chi tiết hóa và cụ thể hóa các nội dung quy định về kiến thức, kỹ năng và phẩm chất đạo đức của nguồn nhân lực được đào tạo. Chuẩn đầu ra của ngành đào tạo mà Thầy/Cô đang giảng dạy có đáp ứng các yêu cầu sau không?</h5>
+                <br />
+                <label for="txtHoTen" style="font-size: 1.2em">1. Chuẩn đầu ra được xác định rõ ràng (về kiến thức, kỹ năng, thái độ, năng lực) và được chuyển tải vào chương trình đào tạo?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input value="Có" type="radio" name="A1" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="A1" required> Không</label>
+                </div>
+
+                <label for="txtHoTen" style="font-size: 1.2em">2. Chương trình đào tạo khuyến khích khả năng học tập suốt đời cho sinh viên?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="A2" required> Có</label>
+                    <label style="font-size: 1.2em"> <input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="A2" required> Không</label>
+                </div>
+
+                <label for="txtHoTen" style="font-size: 1.2em">3. Các chuẩn đầu ra bao gồm các mục tiêu về kiến thức tổng quát, kiến thức chuyên ngành  và kỹ năng?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="A3" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="A3" required> Không</label>
+                </div>
+
+                <label for="txtHoTen" style="font-size: 1.2em">4. Các chuẩn đầu ra phản ánh rõ ràng yêu cầu của các bên liên quan (giảng viên, sinh viên, cựu sinh viên, nhà tuyển dụng)?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="A4" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="A4" required> Không</label>
+                </div>
+
+                <label for="txtHoTen" style="font-size: 1.2em">5. Khoa/Trường có hệ thống theo dõi sự tiến bộ của sinh viên (học tập, rèn luyện, tốt nghiệp, thôi học,…)?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="A5" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="A5" required> Không</label>
+                </div>
+
+
+                <h2 style="color: #0065b3; font-weight: bold; margin-bottom: 5px;margin-top: 10px;">B. VỀ CHƯƠNG TRÌNH ĐÀO TẠO</h2>
+                <h5 style="text-align: justify; font-size: 1.2em">I. Đánh giá quá trình triển khai xây dựng chương trình đào tạo</h5>
+                <br />
+                <label for="xtHoTen" style="font-size: 1.2em">1. Thầy/cô có được tham gia đóng góp ý kiến vào quá trình xây dựng, phát triển và cải tiến chương trình đào tạo của nhà trường không?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B1" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B1" required> Không</label>
+                </div>
+
+                <label for="txtHoTen" style="font-size: 1.2em">2. Nhà trường có tổ chức lấy ý kiến sinh viên và cựu sinh viên về vệc xây dựng chương trình đào tạo không?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B2" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B2" required> Không</label>
+                </div>
+
+                <label for="txtHoTen" style="font-size: 1.2em">3. Nhà trường có tổ chức lấy ý kiến nhà tuyển dụng về việc xây dựng chương trình đào tạo không?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B3" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B3" required> Không</label>
+                </div>
+
+                <label for="txtHoTen" style="font-size: 1.2em">4. Phản hồi từ các đối tượng có liên quan (giảng viên, sinh viên, nhà tuyển dụng) có được Nhà trường sử dụng để cải tiến chương trình đào tạo không?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B4" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B4" required>Không</label>
+                </div>
+
+                <label for="txtHoTen" style="font-size: 1.2em">5. Chương trình đào tạo có được đánh giá định kỳ không?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"> <input style="font-size: 1.2em" value="Có" type="radio" name="B5" required> Có</label>
+                    <label style="font-size: 1.2em"> <input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B5" required> Không</label>
+                </div>
+
+                <label for="txtHoTen" style="font-size: 1.2em">6. Có tham khảo kinh nghiệm phát triển chương trình và biên soạn tài liệu học tập từ các trường đại học có uy tín trong nước và quốc tế không?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B6" required>Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B6" required>Không</label>
+                </div>
+
+                <label for="txtHoTen" style="font-size: 1.2em">7. Nhà trường có tổ chức đánh giá hiện trạng và xác định tài liệu học tập nào cần xây dựng mới hoặc hoàn thiện khi chương trình đào tạo được phê duyệt hay không?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B7" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B7" required> Không</label>
+                </div>
+
+                <label for="txtHoTen" style="font-size: 1.2em">8. Những người tham gia phát triển chương trình đào tạo và cải tiến tài liệu học tập có thực sự là những người có chuyên môn giỏi và có kinh nghiệm giảng dạy hay không?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B8" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B8" required> Không</label>
+                </div>
+
+                <h5 style="text-align: justify; font-size: 1.2em">II.Đánh giá chương trình đào tạo</h5>
+                <br />
+                <label for="txtHoTen" style="font-size: 1.2em">9. Nội dung chương trình đào tạo thể hiện sự cân đối giữa các khối kiến thức, kỹ năng chung và chuyên ngành?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B9" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B9" required> Không</label>
+                </div>
+                <label for="txtHoTen" style="font-size: 1.2em">10. Chương trình đào tạo phản ánh tầm nhìn và sứ mạng của nhà trường?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B10" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B10" required> Không</label>
+                </div>
+
+                <label for="txtHoTen" style="font-size: 1.2em">11. Mỗi môn học có đóng góp rõ ràng vào việc đạt được chuẩn đầu ra?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B11" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B11" required> Không</label>
+                </div>
+                <label for="txtHoTen" style="font-size: 1.2em">12. Chương trình đào tạo được thiết kế mạch lạc; các chủ đề và môn học được tích hợp?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B12" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B12" required> Không</label>
+                </div>
+                <label for="txtHoTen" style="font-size: 1.2em">13. Chương trình đào tạo thể hiện cả bề rộng lẫn chiều sâu?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B13" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B13" required> Không</label>
+                </div>
+                <label for="txtHoTen" style="font-size: 1.2em">14. Chương trình đào tạo thể hiện rõ các môn cơ bản, cơ sở, chuyên ngành và đề án cuối khóa/khóa luận/chuyên đề tốt nghiệp/luận văn/luận án?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B14" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B14" required> Không</label>
+                </div>
+                <label for="txtHoTen" style="font-size: 1.2em">15. Nội dung chương trình đào tạo mang tính cập nhật?</label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B15" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B15" required> Không</label>
+                </div>
+                <hr /> 
+                <div class="form-wrapper">
+                    <label for="txtHoTen">Họ và Tên</label>
+                    <input id="inLop" type="text" name="txtHoTen" placeholder="Họ và Tên" class="form-control" required>
+                </div>
+                <div class="form-wrapper">
+                    <label for="txtEmail">Email</label>
+                    <input id="inEmail" type="email" name="txtEmail" placeholder="Email" class="form-control" required>
+                </div>
+                <button id="btnDoSV" onclick="return stepSetSinhVien();" type="submit">HOÀN TẤT</button>
+            </form>
+            <H1 class="js-success-message is-hidden" style="color:seagreen;margin-top: 30px; text-align: center;">XIN CHÂN THÀNH CẢM ƠN SỰ ĐÓNG GÓP QUÝ GIÁ CỦA QUÝ THẦY/CÔ</H1>
+            <H1 class="js-error-message is-hidden" style="color:seagreen;margin-top: 30px;text-align: center;">XIN CHÂN THÀNH CẢM ƠN SỰ ĐÓNG GÓP QUÝ GIÁ CỦA QUÝ THẦY/CÔ</H1>
+            <div class="loading js-loading is-hidden" id="loadingOK" style="background-color: #00000054; height: 163%;">
+                <div class="loading-spinner">
+                    <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/do_get_info.js">
+        </script>
+
+        <p style="text-align:center">&copy; 20202 TEAM DEV OF FITUEF</p>
+        <p>
+        </p>
+    </div>
+</body>
+
+</html>
