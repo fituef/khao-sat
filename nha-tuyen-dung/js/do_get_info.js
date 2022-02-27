@@ -1,10 +1,11 @@
 // Get the input field
 // Execute a function when the user releases a key on the keyboard
 const form = document.forms['submit-to-google-sheet'];
+let check = false;
 form.addEventListener("keyup", function(event) {
     // Number 13 is the "Enter" key on the keyboard
     if (event.keyCode === 13) {
-        // Cancel the default action, if needed
+        return false;
         event.preventDefault();
         // Trigger the button element with a click
         form.submit();
@@ -12,16 +13,6 @@ form.addEventListener("keyup", function(event) {
 });
 
 function stepSetSinhVien() {
-    var masv = $.trim($("input[name='txtHoTen']").val());
-    if (masv == '') {
-        alert("VUI LÒNG NHẬP HỌ TÊN");
-        return false;
-    } 
-    var email = $.trim($("input[name='txtEmail']").val());
-    if (email == '') {
-        alert("VUI LÒNG NHẬP EMAIL");
-        return false;
-    }  
     doLoading()
         .then(doSetSinhVien)
         .then(doComplete);

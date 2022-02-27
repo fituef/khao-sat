@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <title>PHIẾU KHẢO SÁT Ý KIẾN NHÀ TUYỂN DỤNG VỀ CHUẨN ĐẦU RA & CHƯƠNG TRÌNH ĐÀO TẠO THÔNG QUA VIỆC TUYỂN DỤNG NHÂN SỰ - FIT@UEF
+    <title>
+        PHIẾU KHẢO SÁT Ý KIẾN NHÀ TUYỂN DỤNG VỀ CHUẨN ĐẦU RA & CHƯƠNG TRÌNH ĐÀO TẠO THÔNG QUA VIỆC TUYỂN DỤNG NHÂN SỰ - FIT@UEF
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,11 +13,11 @@
     <meta name="description" content="KHẢO SÁT Ý KIẾN NHÀ TUYỂN DỤNG VỀ CHUẨN ĐẦU RA & CHƯƠNG TRÌNH ĐÀO TẠO THÔNG QUA VIỆC TUYỂN DỤNG NHÂN SỰ - KHOA CÔNG NGHỆ THÔNG TIN, TRƯỜNG ĐẠI HỌC KINH TẾ - TÀI CHÍNH TP.HCM - UEF'" />
     <meta charset="utf-8">
     <style>
-         :root {
+        :root {
             --accent: #F18260;
             --purple: #252431;
         }
-        
+
         .form-container {
             position: relative;
             background: #fff;
@@ -33,11 +34,11 @@
             box-shadow: 0 10px 50px 0 #ccc;
             margin-bottom: 2rem;
         }
-        
+
         .is-hidden {
             display: none !important;
         }
-        
+
         a {
             display: block;
             margin: 0 auto;
@@ -49,28 +50,30 @@
             line-height: 20px;
             font-size: 16px;
         }
-        
+
         @keyframes rotate {
             100% {
                 transform: rotate(360deg);
             }
         }
-        
+
         @keyframes dash {
             0% {
                 stroke-dasharray: 1, 200;
                 stroke-dashoffset: 0;
             }
+
             50% {
                 stroke-dasharray: 89, 200;
                 stroke-dashoffset: -35;
             }
+
             100% {
                 stroke-dasharray: 89, 200;
                 stroke-dashoffset: -124;
             }
         }
-        
+
         .loading {
             position: absolute;
             top: 0;
@@ -82,33 +85,33 @@
             justify-content: center;
             align-items: center;
         }
-        
+
         .loading-spinner {
             width: 50px;
             height: 50px;
         }
-        
-        .loading-spinner svg {
-            position: relative;
-            animation: rotate 2s linear infinite;
-            height: 50px;
-            width: 50px;
-        }
-        
-        .loading-spinner circle {
-            stroke: var(--accent);
-            stroke-dasharray: 1, 200;
-            stroke-dashoffset: 0;
-            stroke-linecap: round;
-            animation: dash 1.5s ease-in-out infinite;
-        }
-        
+
+            .loading-spinner svg {
+                position: relative;
+                animation: rotate 2s linear infinite;
+                height: 50px;
+                width: 50px;
+            }
+
+            .loading-spinner circle {
+                stroke: var(--accent);
+                stroke-dasharray: 1, 200;
+                stroke-dashoffset: 0;
+                stroke-linecap: round;
+                animation: dash 1.5s ease-in-out infinite;
+            }
+
         p.js-success-message {
             text-align: center;
             font-size: 20px;
             padding: 10px 0px;
         }
-        
+
         table.dtable th,
         table.dtable td,
         table.ntable th,
@@ -118,30 +121,30 @@
             padding: 5px;
             font-weight: normal;
         }
-        
+
         TABLE {
             margin-bottom: 5px;
         }
-        
-        table.dtable,
-        table.ntable {
-            border: 1px #ccc solid;
-            border-collapse: collapse;
-            padding: 5px;
-            width: 100%;
-        }
-        
+
+            table.dtable,
+            table.ntable {
+                border: 1px #ccc solid;
+                border-collapse: collapse;
+                padding: 5px;
+                width: 100%;
+            }
+
         TH {
             background: #f5f5f5;
             font-style: normal;
             color: #167ec2;
         }
-        
+
         TD {
             padding-right: 5px;
             padding-left: 5px;
         }
-        
+
         .btn-tuyendung {
             float: right;
             border: 2px solid #ae3c33;
@@ -149,44 +152,46 @@
             padding: 10px;
             color: red;
         }
-        
+
         .stt {
             font-weight: bold;
             color: white;
         }
-        
+
         #hdth {
             height: 50px;
         }
-        
-        #hdth th {
-            color: white;
-            background: #ed1b2f;
-        }
-        
+
+            #hdth th {
+                color: white;
+                background: #ed1b2f;
+            }
+
         .trchan {
             background-color: #0a8075;
         }
-        
+
         .trle {
             background-color: #009688;
         }
-        
-        .trchan a,
-        .trle a {
-            color: white;
-        }
-        
+
+            .trchan a,
+            .trle a {
+                color: white;
+            }
+
         h3 {
             font-size: 20px;
         }
+
         .preference label {
             display: inline;
             justify-content: space-between;
             width: 20px;
             margin: 1.5rem;
         }
-        .preference { 
+
+        .preference {
             margin: 5px;
         }
     </style>
@@ -199,8 +204,8 @@
     <div id="container">
         <div id="main-content" style="padding-left:5px; padding-right:5px">
             <H5 style="font-size: 1.2em;text-align:justify; color: #0065b3; font-weight: bold; margin-bottom: 5px; margin-top: 10px;">Trường Đại học Kinh tế - Tài chính Tp.HCM (UEF) chân thành cảm ơn Quý cơ quan/Doanh nghiệp (CQ/DN) trong thời gian vừa qua đã tiếp nhận sinh viên của trường UEF đào tạo về làm việc tại đơn vị. Chúng tôi rất mong nhận được ý kiến đóng góp của Quý vị trên phiếu khảo sát này, để trên cơ sở những nhận xét và góp ý chân thành đó, chúng tôi sẽ có những điều chỉnh, cải tiến để những sản phẩm đầu ra và chương trình đào tạo của UEF ngày càng có chất lượng, đáp ứng được yêu cầu của Quý cơ quan/doanh nghiệp nói riêng và thị trường lao động nói chung. Chúng tôi xin cam đoan những thông tin trả lời trong phiếu khảo sát này sẽ được giữ bí mật và sử dụng đúng mục đích nêu trên. Xin chân thành cảm ơn sự đóng góp quý giá của Quý đơn vị.</H5>
-            <hr /> 
-            <form name="submit-to-google-sheet" class="js-showupdate">
+            <hr />
+            <form name="submit-to-google-sheet" class="js-showupdate" onsubmit="return false">
                 <h2 style="color: #0065b3; font-weight: bold; margin-bottom: 5px;margin-top: 10px;">I. THÔNG TIN VỀ CƠ QUAN/ DOANH NGHIỆP </h2>
                 <div class="form-wrapper">
                     <label for="txtHoTen"><b>1. Tên cơ quan/doanh nghiệp (CQ/DN)</b></label>
@@ -237,12 +242,12 @@
                 </div>
 
                 <h2 style="color: #0065b3; font-weight: bold; margin-bottom: 5px;margin-top: 10px;">II. NHẬN XÉT CHUNG VỀ SINH VIÊN UEF RA TRƯỜNG LÀM VIỆC TẠI ĐƠN VỊ </h2>
-                <h5 style="text-align: justify; font-size: 1.2em">A. NHẬN XÉT CHUNG VỀ SINH VIÊN UEF</h5>
-                <h2 style="color: #0065b3; font-weight: bold; margin-bottom: 5px;margin-top: 10px;">KIẾN THỨC</h2>
+                <h3 style="text-align: justify; font-size: 1.2em">NHẬN XÉT CHUNG VỀ SINH VIÊN UEF</h3>
+                <h3 style="color: #0065b3; font-weight: bold; margin-bottom: 5px;margin-top: 10px;">A. KIẾN THỨC</h3>
                 <br />
-                <label for="txtHoTen" style="font-size: 1.2em">1. Kiến thức chuyên ngành?</label><br />
+                <label for="txtHoTen" style="font-size: 1.2em"><b>1. Kiến thức chuyên ngành?</b></label><br />
                 <label style="font-size:1.0em">
-                    # Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị
+                    <i># Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
                 </label>
                 <div class="preference">
                     <label style="font-size: 1.2em"><input value="1" type="radio" name="II11" required>Hoàn toàn không hài lòng</label><br />
@@ -252,9 +257,9 @@
                     <label style="font-size: 1.2em"><input value="5" type="radio" name="II11" required>Rất hài lòng</label>
                 </div>
 
-                <label for="txtHoTen" style="font-size: 1.2em">2. Khả năng ứng dụng kiến thức chuyên ngành vào thực tiễn công việc?</label><br />
+                <label for="txtHoTen" style="font-size: 1.2em"><b>2. Khả năng ứng dụng kiến thức chuyên ngành vào thực tiễn công việc?</b></label><br />
                 <label style="font-size:1.0em">
-                    # Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị
+                    <i># Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
                 </label>
                 <div class="preference">
                     <label style="font-size: 1.2em"><input value="1" type="radio" name="II12" required>Hoàn toàn không hài lòng</label><br />
@@ -264,9 +269,9 @@
                     <label style="font-size: 1.2em"><input value="5" type="radio" name="II12" required>Rất hài lòng</label>
                 </div>
 
-                <label for="txtHoTen" style="font-size: 1.2em">3. Kiến thức khác liên quan đến lĩnh vực hoạt động?</label><br />
+                <label for="txtHoTen" style="font-size: 1.2em"><b>3. Kiến thức khác liên quan đến lĩnh vực hoạt động?</b></label><br />
                 <label style="font-size:1.0em">
-                    # Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị
+                    <i># Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
                 </label>
                 <div class="preference">
                     <label style="font-size: 1.2em"><input value="1" type="radio" name="II13" required>Hoàn toàn không hài lòng</label><br />
@@ -276,11 +281,11 @@
                     <label style="font-size: 1.2em"><input value="5" type="radio" name="II13" required>Rất hài lòng</label>
                 </div>
 
-                <h2 style="color: #0065b3; font-weight: bold; margin-bottom: 5px;margin-top: 10px;">KỸ NĂNG NGHỀ NGHIỆP & KỸ NĂNG KHÁC</h2>
+                <h3 style="color: #0065b3; font-weight: bold; margin-bottom: 5px;margin-top: 10px;">B. KỸ NĂNG NGHỀ NGHIỆP & KỸ NĂNG KHÁC</h3>
                 <br />
-                <label for="txtHoTen" style="font-size: 1.2em">1. Kỹ năng thực hiện công việc được giao?</label><br />
+                <label for="txtHoTen" style="font-size: 1.2em"><b>1. Kỹ năng thực hiện công việc được giao?</b></label><br />
                 <label style="font-size:1.0em">
-                    # Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị
+                    <i> # Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
                 </label>
                 <div class="preference">
                     <label style="font-size: 1.2em"><input value="1" type="radio" name="II21" required>Hoàn toàn không hài lòng</label><br />
@@ -290,9 +295,9 @@
                     <label style="font-size: 1.2em"><input value="5" type="radio" name="II21" required>Rất hài lòng</label>
                 </div>
 
-                <label for="txtHoTen" style="font-size: 1.2em">2. Kỹ năng lập kế hoạch và tổ chức thực hiện kế hoạch?</label><br />
+                <label for="txtHoTen" style="font-size: 1.2em"><b>2. Kỹ năng lập kế hoạch và tổ chức thực hiện kế hoạch?</b></label><br />
                 <label style="font-size:1.0em">
-                    # Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị
+                    <i> # Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
                 </label>
                 <div class="preference">
                     <label style="font-size: 1.2em"><input value="1" type="radio" name="II22" required>Hoàn toàn không hài lòng</label><br />
@@ -302,9 +307,9 @@
                     <label style="font-size: 1.2em"><input value="5" type="radio" name="II22" required>Rất hài lòng</label>
                 </div>
 
-                <label for="txtHoTen" style="font-size: 1.2em">3. Kỹ năng phân tích, đánh giá, giải quyết vấn đề?</label><br />
+                <label for="txtHoTen" style="font-size: 1.2em"><b>3. Kỹ năng phân tích, đánh giá, giải quyết vấn đề?</b></label><br />
                 <label style="font-size:1.0em">
-                    # Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị
+                    <i># Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
                 </label>
                 <div class="preference">
                     <label style="font-size: 1.2em"><input value="1" type="radio" name="II23" required>Hoàn toàn không hài lòng</label><br />
@@ -313,9 +318,9 @@
                     <label style="font-size: 1.2em"><input value="4" type="radio" name="II23" required>Khá hài lòng</label><br />
                     <label style="font-size: 1.2em"><input value="5" type="radio" name="II23" required>Rất hài lòng</label>
                 </div>
-                <label for="txtHoTen" style="font-size: 1.2em">4. Đề xuất phương án cải tiến kỹ thuật, quy trình công nghệ nâng cao chất lượng công việc?</label><br />
+                <label for="txtHoTen" style="font-size: 1.2em"><b>4. Đề xuất phương án cải tiến kỹ thuật, quy trình công nghệ nâng cao chất lượng công việc?</b></label><br />
                 <label style="font-size:1.0em">
-                    # Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị
+                    <i># Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
                 </label>
                 <div class="preference">
                     <label style="font-size: 1.2em"><input value="1" type="radio" name="II24" required>Hoàn toàn không hài lòng</label><br />
@@ -324,9 +329,9 @@
                     <label style="font-size: 1.2em"><input value="4" type="radio" name="II24" required>Khá hài lòng</label><br />
                     <label style="font-size: 1.2em"><input value="5" type="radio" name="II24" required>Rất hài lòng</label>
                 </div>
-                <label for="txtHoTen" style="font-size: 1.2em">5. Kỹ năng giao tiếp?</label><br />
+                <label for="txtHoTen" style="font-size: 1.2em"><b>5. Kỹ năng giao tiếp?</b></label><br />
                 <label style="font-size:1.0em">
-                    # Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị
+                    <i># Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
                 </label>
                 <div class="preference">
                     <label style="font-size: 1.2em"><input value="1" type="radio" name="II25" required>Hoàn toàn không hài lòng</label><br />
@@ -335,9 +340,9 @@
                     <label style="font-size: 1.2em"><input value="4" type="radio" name="II25" required>Khá hài lòng</label><br />
                     <label style="font-size: 1.2em"><input value="5" type="radio" name="II25" required>Rất hài lòng</label>
                 </div>
-                <label for="txtHoTen" style="font-size: 1.2em">6. Kỹ năng sử dụng ngoại ngữ?</label><br />
+                <label for="txtHoTen" style="font-size: 1.2em"><b>6. Kỹ năng sử dụng ngoại ngữ?</b></label><br />
                 <label style="font-size:1.0em">
-                    # Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị
+                    <i># Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
                 </label>
                 <div class="preference">
                     <label style="font-size: 1.2em"><input value="1" type="radio" name="II26" required>Hoàn toàn không hài lòng</label><br />
@@ -346,9 +351,9 @@
                     <label style="font-size: 1.2em"><input value="4" type="radio" name="II26" required>Khá hài lòng</label><br />
                     <label style="font-size: 1.2em"><input value="5" type="radio" name="II26" required>Rất hài lòng</label>
                 </div>
-                <label for="txtHoTen" style="font-size: 1.2em">7. Kỹ năng sử dụng công nghệ thông tin trong công việc?</label><br />
+                <label for="txtHoTen" style="font-size: 1.2em"><b>7. Kỹ năng sử dụng công nghệ thông tin trong công việc?</b></label><br />
                 <label style="font-size:1.0em">
-                    # Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị
+                    <i># Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
                 </label>
                 <div class="preference">
                     <label style="font-size: 1.2em"><input value="1" type="radio" name="II27" required>Hoàn toàn không hài lòng</label><br />
@@ -357,184 +362,257 @@
                     <label style="font-size: 1.2em"><input value="4" type="radio" name="II27" required>Khá hài lòng</label><br />
                     <label style="font-size: 1.2em"><input value="5" type="radio" name="II27" required>Rất hài lòng</label>
                 </div>
-                <label for="txtHoTen" style="font-size: 1.2em">3. Kỹ năng phân tích, đánh giá, giải quyết vấn đề?</label><br />
+                <label for="txtHoTen" style="font-size: 1.2em"><b>8. Kỹ năng tư duy sáng tạo?</b></label><br />
                 <label style="font-size:1.0em">
-                    # Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị
+                    <i># Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
                 </label>
                 <div class="preference">
-                    <label style="font-size: 1.2em"><input value="1" type="radio" name="II23" required>Hoàn toàn không hài lòng</label><br />
-                    <label style="font-size: 1.2em"><input value="2" type="radio" name="II23" required>Không hài lòng</label><br />
-                    <label style="font-size: 1.2em"><input value="3" type="radio" name="II23" required>Hài lòng</label><br />
-                    <label style="font-size: 1.2em"><input value="4" type="radio" name="II23" required>Khá hài lòng</label><br />
-                    <label style="font-size: 1.2em"><input value="5" type="radio" name="II23" required>Rất hài lòng</label>
+                    <label style="font-size: 1.2em"><input value="1" type="radio" name="II28" required>Hoàn toàn không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="2" type="radio" name="II28" required>Không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="3" type="radio" name="II28" required>Hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="4" type="radio" name="II28" required>Khá hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="5" type="radio" name="II28" required>Rất hài lòng</label>
                 </div>
-                <label for="txtHoTen" style="font-size: 1.2em">3. Kỹ năng phân tích, đánh giá, giải quyết vấn đề?</label><br />
+                <label for="txtHoTen" style="font-size: 1.2em"><b>9. Kỹ năng làm việc nhóm?</b></label><br />
                 <label style="font-size:1.0em">
-                    # Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị
+                    <i># Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
                 </label>
                 <div class="preference">
-                    <label style="font-size: 1.2em"><input value="1" type="radio" name="II23" required>Hoàn toàn không hài lòng</label><br />
-                    <label style="font-size: 1.2em"><input value="2" type="radio" name="II23" required>Không hài lòng</label><br />
-                    <label style="font-size: 1.2em"><input value="3" type="radio" name="II23" required>Hài lòng</label><br />
-                    <label style="font-size: 1.2em"><input value="4" type="radio" name="II23" required>Khá hài lòng</label><br />
-                    <label style="font-size: 1.2em"><input value="5" type="radio" name="II23" required>Rất hài lòng</label>
+                    <label style="font-size: 1.2em"><input value="1" type="radio" name="II29" required>Hoàn toàn không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="2" type="radio" name="II29" required>Không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="3" type="radio" name="II29" required>Hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="4" type="radio" name="II29" required>Khá hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="5" type="radio" name="II29" required>Rất hài lòng</label>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <label for="txtHoTen" style="font-size: 1.2em">2. Chương trình đào tạo khuyến khích khả năng học tập suốt đời cho sinh viên?</label>
+                <label for="txtHoTen" style="font-size: 1.2em"><b>10. Khả năng thích nghi, hội nhập và phát triển?</b></label><br />
+                <label style="font-size:1.0em">
+                    <i> # Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
+                </label>
                 <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="A2" required> Có</label>
-                    <label style="font-size: 1.2em"> <input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="A2" required> Không</label>
+                    <label style="font-size: 1.2em"><input value="1" type="radio" name="II210" required>Hoàn toàn không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="2" type="radio" name="II210" required>Không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="3" type="radio" name="II210" required>Hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="4" type="radio" name="II210" required>Khá hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="5" type="radio" name="II210" required>Rất hài lòng</label>
                 </div>
-
-                <label for="txtHoTen" style="font-size: 1.2em">3. Các chuẩn đầu ra bao gồm các mục tiêu về kiến thức tổng quát, kiến thức chuyên ngành  và kỹ năng?</label>
+                <label for="txtHoTen" style="font-size: 1.2em"><b>11. Khả năng tự học, tự rèn?</b></label><br />
+                <label style="font-size:1.0em">
+                    <i># Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
+                </label>
                 <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="A3" required> Có</label>
-                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="A3" required> Không</label>
+                    <label style="font-size: 1.2em"><input value="1" type="radio" name="II211" required>Hoàn toàn không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="2" type="radio" name="II211" required>Không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="3" type="radio" name="II211" required>Hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="4" type="radio" name="II211" required>Khá hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="5" type="radio" name="II211" required>Rất hài lòng</label>
                 </div>
 
-                <label for="txtHoTen" style="font-size: 1.2em">4. Các chuẩn đầu ra phản ánh rõ ràng yêu cầu của các bên liên quan (giảng viên, sinh viên, cựu sinh viên, nhà tuyển dụng)?</label>
-                <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="A4" required> Có</label>
-                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="A4" required> Không</label>
-                </div>
-
-                <label for="txtHoTen" style="font-size: 1.2em">5. Khoa/Trường có hệ thống theo dõi sự tiến bộ của sinh viên (học tập, rèn luyện, tốt nghiệp, thôi học,…)?</label>
-                <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="A5" required> Có</label>
-                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="A5" required> Không</label>
-                </div>
-
-
-                <h2 style="color: #0065b3; font-weight: bold; margin-bottom: 5px;margin-top: 10px;">B. VỀ CHƯƠNG TRÌNH ĐÀO TẠO</h2>
-                <h5 style="text-align: justify; font-size: 1.2em">I. Đánh giá quá trình triển khai xây dựng chương trình đào tạo</h5>
+                <h3 style="color: #0065b3; font-weight: bold; margin-bottom: 5px;margin-top: 10px;">C. THÁI ĐỘ</h3>
                 <br />
-                <label for="xtHoTen" style="font-size: 1.2em">1. Thầy/cô có được tham gia đóng góp ý kiến vào quá trình xây dựng, phát triển và cải tiến chương trình đào tạo của nhà trường không?</label>
+                <label for="txtHoTen" style="font-size: 1.2em"><b>1. Ý thức tổ chức kỷ luật?</b></label><br />
+                <label style="font-size:1.0em">
+                    <i># Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
+                </label>
                 <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B1" required> Có</label>
-                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B1" required> Không</label>
+                    <label style="font-size: 1.2em"><input value="1" type="radio" name="II31" required>Hoàn toàn không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="2" type="radio" name="II31" required>Không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="3" type="radio" name="II31" required>Hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="4" type="radio" name="II31" required>Khá hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="5" type="radio" name="II31" required>Rất hài lòng</label>
+                </div>
+                <label for="txtHoTen" style="font-size: 1.2em"><b>2. Tinh thần trách nhiệm?</b></label><br />
+                <label style="font-size:1.0em">
+                    <i># Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
+                </label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input value="1" type="radio" name="II32" required>Hoàn toàn không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="2" type="radio" name="II32" required>Không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="3" type="radio" name="II32" required>Hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="4" type="radio" name="II32" required>Khá hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="5" type="radio" name="II32" required>Rất hài lòng</label>
+                </div>
+                <label for="txtHoTen" style="font-size: 1.2em"><b>3. Ham học hỏi để nâng cao hiệu quả công việc?</b></label><br />
+                <label style="font-size:1.0em">
+                    <i># Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
+                </label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input value="1" type="radio" name="II33" required>Hoàn toàn không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="2" type="radio" name="II33" required>Không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="3" type="radio" name="II33" required>Hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="4" type="radio" name="II33" required>Khá hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="5" type="radio" name="II33" required>Rất hài lòng</label>
+                </div>
+                <label for="txtHoTen" style="font-size: 1.2em"><b>4. Đóng góp ý kiến, xây dựng, phát triển đơn vị?</b></label><br />
+                <label style="font-size:1.0em">
+                    <i># Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
+                </label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input value="1" type="radio" name="II34" required>Hoàn toàn không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="2" type="radio" name="II34" required>Không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="3" type="radio" name="II34" required>Hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="4" type="radio" name="II34" required>Khá hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="5" type="radio" name="II34" required>Rất hài lòng</label>
+                </div>
+                <label for="txtHoTen" style="font-size: 1.2em"><b>5. Lắng nghe, tiếp thu, khắc phục nhược điểm cá nhân?</b></label><br />
+                <label style="font-size:1.0em">
+                    <i> # Mức độ hài lòng đối với sinh viên Đại học UEF đang làm việc tại Quý đơn vị</i>
+                </label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input value="1" type="radio" name="II35" required>Hoàn toàn không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="2" type="radio" name="II35" required>Không hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="3" type="radio" name="II35" required>Hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="4" type="radio" name="II35" required>Khá hài lòng</label><br />
+                    <label style="font-size: 1.2em"><input value="5" type="radio" name="II35" required>Rất hài lòng</label>
                 </div>
 
-                <label for="txtHoTen" style="font-size: 1.2em">2. Nhà trường có tổ chức lấy ý kiến sinh viên và cựu sinh viên về vệc xây dựng chương trình đào tạo không?</label>
+
+                <label for="txtHoTen" style="font-size: 1.2em"><b>II.2. Theo Quý đơn vị, sau khi ra trường sinh viên Đại học UEF có cần được đào tạo bổ sung để đáp ứng yêu cầu công việc không?</b></label>
                 <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B2" required> Có</label>
-                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B2" required> Không</label>
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="II.2" required> Có</label>
+                    <label style="font-size: 1.2em"> <input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="II.2" required> Không</label>
+                </div>
+                <label style="font-size:1.0em; font-weight:bold">
+                    <i> # Nếu có, thì cần bổ sung thêm về(có thể chọn nhiều hơn một lựa chọn):</i>
+                </label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input value="Kiến thức chuyên môn" type="checkbox" name="II.2a"> Kiến thức chuyên môn</label><br />
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Công nghệ thông tin" type="checkbox" name="II.2b"> Công nghệ thông tin</label><br />
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Kỹ năng nghiệp vụ" type="checkbox" name="II.2c"> Kỹ năng nghiệp vụ</label><br />
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Ngoại ngữ" type="checkbox" name="II.2d"> Ngoại ngữ</label><br />
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Kỹ năng mềm" type="checkbox" name="II.2e"> Kỹ năng mềm</label><br />
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="checkbox"> Khác <input name="II.2f" /></label>
                 </div>
 
-                <label for="txtHoTen" style="font-size: 1.2em">3. Nhà trường có tổ chức lấy ý kiến nhà tuyển dụng về việc xây dựng chương trình đào tạo không?</label>
+
+                <label for="txtHoTen" style="font-size: 1.2em"><b>II.3. Môn học nào mà Quý đơn vị thấy cần bổ sung hoặc bỏ bớt  trong chương trình đào tạo?</b></label>
                 <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B3" required> Có</label>
-                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B3" required> Không</label>
+                    <label style="margin:0 !important"><b># Bổ sung (<span>Các môn cách nhau bằng dấu ";"</span>)</b></label>
+                    <input id="inLop" type="text" name="II.3Them" placeholder="Môn học bổ sung..." class="form-control" required>
+                    <br />
+                    <label style="margin:0 !important"><b># Bỏ bớt (<span>Các môn cách nhau bằng dấu ";"</span>)</b></label>
+                    <input id="inLop" type="text" name="II.3Bo" placeholder="Môn học bỏ bớt..." class="form-control" required>
+                </div>
+                <h2 style="color: #0065b3; font-weight: bold; margin-bottom: 5px;margin-top: 10px;">III. HOẠT ĐỘNG ĐÀO TẠO CỦA NHÀ TRƯỜNG</h2>
+                <p>
+                    <i>
+                        Nhận xét chung về chương trình đào tạo của trường: (xin lựa chọn số điểm thích hợp)<br />(Xin tham khảo chương trình đào tạo gởi kèm)
+                    </i>
+                </p> <br />
+
+                <label for="txtHoTen" style="font-size: 1.2em"><b>1. Chương trình, nội dung đào tạo được thiết kế so với yêu cầu công việc của đơn vị?</b></label><br />
+                <label style="font-size:1.0em">
+                    <i> #Mức điểm <b style="color:orangered">Từ không đạt yêu cầu </b> <span>đến</span> <b style="color:forestgreen">Rất đạt yêu cầu</b></i>
+                </label>
+                <div class="preference">
+                    <label style="font-size: 1.2em"><input value="1" type="radio" name="III.1" required>1</label>
+                    <label style="font-size: 1.2em; margin-left:5%"><input value="2" type="radio" name="III.1" required>2</label>
+                    <label style="font-size: 1.2em; margin-left:5%"><input value="3" type="radio" name="III.1" required>3</label>
+                    <label style="font-size: 1.2em; margin-left:5%"><input value="4" type="radio" name="III.1" required>4</label>
+                    <label style="font-size: 1.2em; margin-left:5%"><input value="5" type="radio" name="III.1" required>5</label>
                 </div>
 
-                <label for="txtHoTen" style="font-size: 1.2em">4. Phản hồi từ các đối tượng có liên quan (giảng viên, sinh viên, nhà tuyển dụng) có được Nhà trường sử dụng để cải tiến chương trình đào tạo không?</label>
+                <label for="txtHoTen" style="font-size: 1.2em"><b>2. Các kiến thức chuyên môn được đào tạo có hữu ích cho công việc của đơn vị?</b></label><br />
+                <label style="font-size:1.0em">
+                    <i> #Mức điểm <b style="color:orangered">Từ không hữu ích </b> <span>đến</span> <b style="color:forestgreen">Rất hữu ích</b></i>
+                </label>
                 <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B4" required> Có</label>
-                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B4" required>Không</label>
+                    <label style="font-size: 1.2em"><input value="1" type="radio" name="II35" required>1</label>
+                    <label style="font-size: 1.2em; margin-left:5%"><input value="2" type="radio" name="III.2" required>2</label>
+                    <label style="font-size: 1.2em; margin-left:5%"><input value="3" type="radio" name="III.2" required>3</label>
+                    <label style="font-size: 1.2em; margin-left:5%"><input value="4" type="radio" name="III.2" required>4</label>
+                    <label style="font-size: 1.2em; margin-left:5%"><input value="5" type="radio" name="III.2" required>5</label>
                 </div>
 
-                <label for="txtHoTen" style="font-size: 1.2em">5. Chương trình đào tạo có được đánh giá định kỳ không?</label>
+                <label for="txtHoTen" style="font-size: 1.2em"><b>3. Tỷ lệ phân bổ giữa lý thuyết và thực hành trong chương trình đào tạo?</b></label><br />
+                <label style="font-size:1.0em">
+                    <i> #Mức điểm <b style="color:orangered">Từ không hợp lý </b> <span>đến</span> <b style="color:forestgreen">Rất hợp lý</b></i>
+                </label>
                 <div class="preference">
-                    <label style="font-size: 1.2em"> <input style="font-size: 1.2em" value="Có" type="radio" name="B5" required> Có</label>
-                    <label style="font-size: 1.2em"> <input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B5" required> Không</label>
+                    <label style="font-size: 1.2em"><input value="1" type="radio" name="II35" required>1</label>
+                    <label style="font-size: 1.2em; margin-left:5%"><input value="2" type="radio" name="III.3" required>2</label>
+                    <label style="font-size: 1.2em; margin-left:5%"><input value="3" type="radio" name="III.3" required>3</label>
+                    <label style="font-size: 1.2em; margin-left:5%"><input value="4" type="radio" name="III.3" required>4</label>
+                    <label style="font-size: 1.2em; margin-left:5%"><input value="5" type="radio" name="III.3" required>5</label>
+                </div>
+                <div class="form-wrapper">
+                    <label for="txtHoTen"><b>Nhận xét khác(nếu có):</b></label>
+                    <input id="inLop" type="text" name="IIINX" placeholder="Nhận xét khác(nếu có):" class="form-control" required>
                 </div>
 
-                <label for="txtHoTen" style="font-size: 1.2em">6. Có tham khảo kinh nghiệm phát triển chương trình và biên soạn tài liệu học tập từ các trường đại học có uy tín trong nước và quốc tế không?</label>
+                <label for="txtHoTen" style="font-size: 1.2em"><b>III.2 Đối với ngành đơn vị quan tâm, kiến thức/ kỹ năng đặc biệt nào cần được nhấn mạnh:</b></label><br />
                 <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B6" required>Có</label>
-                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B6" required>Không</label>
+                    <label style="margin:0 !important"><b>Tên ngành 1: </b></label>
+                    <input style="margin-top:10px" id="inLop" type="text" name="III.2a1" placeholder="Tên ngành 1 ..." class="form-control" required>
+                    <br />
+                    <label style="margin:0 !important"><b>Kiến thức cần:</b></label>
+                    <input style="margin-top:10px" id="inLop" type="text" name="III.2a2" placeholder="Kiến thức cần ..." class="form-control" required>
+                    <br />
+                    <label style="margin:0 !important"><b>Kỹ năng cần: </b></label>
+                    <input style="margin-top:10px" id="inLop" type="text" name="III.2a3" placeholder="Kỹ năng cần ..." class="form-control" required>
                 </div>
 
-                <label for="txtHoTen" style="font-size: 1.2em">7. Nhà trường có tổ chức đánh giá hiện trạng và xác định tài liệu học tập nào cần xây dựng mới hoặc hoàn thiện khi chương trình đào tạo được phê duyệt hay không?</label>
                 <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B7" required> Có</label>
-                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B7" required> Không</label>
+                    <label style="margin:0 !important"><b>Tên ngành 2: </b></label>
+                    <input style="margin-top:10px" id="inLop" type="text" name="III.2b1" placeholder="Tên ngành 2 ..." class="form-control" required>
+                    <br />
+                    <label style="margin:0 !important"><b>Kiến thức cần:</b></label>
+                    <input style="margin-top:10px" id="inLop" type="text" name="III.2b2" placeholder="Kiến thức cần ..." class="form-control" required>
+                    <br />
+                    <label style="margin:0 !important"><b>Kỹ năng cần: </b></label>
+                    <input style="margin-top:10px" id="inLop" type="text" name="III.2b3" placeholder="Kỹ năng cần ..." class="form-control" required>
                 </div>
 
-                <label for="txtHoTen" style="font-size: 1.2em">8. Những người tham gia phát triển chương trình đào tạo và cải tiến tài liệu học tập có thực sự là những người có chuyên môn giỏi và có kinh nghiệm giảng dạy hay không?</label>
-                <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B8" required> Có</label>
-                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B8" required> Không</label>
-                </div>
+                <label for="txtHoTen" style="font-size: 1.2em"><b>III.3. Theo Quý đơn vị, nhà trường cần tăng cường cải tiến vấn đề gì để nâng cao chất lượng nguồn nhân lực (mục tiêu đào tạo, nội dung giảng dạy, khối lượng thực hành/thực tập, …):</b></label>
+                <textarea style="margin-top:10px; height:auto !important; padding-top:5px" rows="5" name="III.31" class="form-control" required> </textarea>
 
-                <h5 style="text-align: justify; font-size: 1.2em">II.Đánh giá chương trình đào tạo</h5>
                 <br />
-                <label for="txtHoTen" style="font-size: 1.2em">9. Nội dung chương trình đào tạo thể hiện sự cân đối giữa các khối kiến thức, kỹ năng chung và chuyên ngành?</label>
+                <label for="txtHoTen" style="font-size: 1.2em"><b>III.4. Quý đơn vị quan tâm và có thể hợp tác với UEF trong lĩnh vực hoạt động nào?</b></label>
                 <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B9" required> Có</label>
-                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B9" required> Không</label>
-                </div>
-                <label for="txtHoTen" style="font-size: 1.2em">10. Chương trình đào tạo phản ánh tầm nhìn và sứ mạng của nhà trường?</label>
-                <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B10" required> Có</label>
-                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B10" required> Không</label>
+                    <label style="font-size: 1.2em"><input value="Tuyển dụng lao động " type="checkbox" name="III.4a"> Tuyển dụng lao động </label><br />
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Cho sinh viên tham quan nhà máy" type="checkbox" name="III.4b"> Cho sinh viên tham quan nhà máy</label><br />
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Hợp tác đào tạo kỹ năng" type="checkbox" name="III.4c"> Hợp tác đào tạo kỹ năng</label><br />
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Nhận sinh viên học việc tại đơn vị" type="checkbox" name="III.4d"> Nhận sinh viên học việc tại đơn vị</label><br />
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Nhận sinh viên thực tập/kiến tập" type="checkbox" name="III.4e"> Nhận sinh viên thực tập/kiến tập</label><br />
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Giao lưu chia sẻ kinh nghiệm" type="checkbox" name="III.4f"> Giao lưu chia sẻ kinh nghiệm</label><br />
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Hợp tác nghiên cứu và chuyển giao công nghệ" type="checkbox" name="III.4g"> Hợp tác nghiên cứu và chuyển giao công nghệ</label><br />
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="checkbox"> Khác <input name="III.4h" /></label>
                 </div>
 
-                <label for="txtHoTen" style="font-size: 1.2em">11. Mỗi môn học có đóng góp rõ ràng vào việc đạt được chuẩn đầu ra?</label>
+                <label for="txtHoTen" style="font-size: 1.2em"><b>III.5 Thông tin về sinh viên UEF đang được tuyển dụng tại Quý đơn vị:</b></label><br />
                 <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B11" required> Có</label>
-                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B11" required> Không</label>
-                </div>
-                <label for="txtHoTen" style="font-size: 1.2em">12. Chương trình đào tạo được thiết kế mạch lạc; các chủ đề và môn học được tích hợp?</label>
+                    <label style="margin:0 !important"><b>Tốt nghiệp ngành: </b></label>
+                    <input style="margin-top:10px" id="inLop" type="text" name="III.5a" placeholder="Tốt nghiệp ngành ..." class="form-control" required>
+                    <br />
+                    <label style="margin:0 !important"><b>Công việc đảm nhận:</b></label>
+                    <input style="margin-top:10px" id="inLop" type="text" name="III.5b" placeholder="Công việc đảm nhận ..." class="form-control" required>
+                    <br />
+                    <label style="margin:0 !important"><b>Chức danh/vị trí công tác: </b></label>
+                    <input style="margin-top:10px" id="inLop" type="text" name="III.5c" placeholder="Chức danh/vị trí công tác ..." class="form-control" required>
+                    <br />
+                    <label style="margin:0 !important"><b>Thâm niên công tác của sinh viên: </b></label>
+                    <input style="margin-top:10px" id="inLop" type="text" name="III.5d" placeholder="Thâm niên công tác của sinh viên ..." class="form-control" required>
+                    <br />
+                    <label style="margin:0 !important"><b>Nếu có hơn 1 sinh viên đang làm việc tại đơn vị, xin cho biết thêm về: số lượng/thuộc ngành: </b></label>
+                    <input style="margin-top:10px" id="inLop" type="text" name="III.5e" placeholder="Số lượng/thuộc ngành ..." class="form-control" required>
+                    <br />
+                    <label style="margin:0 !important"><b>Đối tượng sinh viên UEF đang làm việc tại CQ/DN là: </b></label>
+                    <br />
+                    <label style="font-size: 1.2em"><input value="Sinh viên mới tốt nghiệp" type="checkbox" name="III.5f1"> Sinh viên mới tốt nghiệp</label><br />
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Đã từng làm việc ở công ty khác chuyển đến" type="checkbox" name="III.5f2"> Đã từng làm việc ở công ty khác chuyển đến</label><br />
+                </div>  
+                
+                <label for="xtHoTen" style="font-size: 1.2em"><b>III.6. Quý đơn vị có hài lòng về chất lượng Sinh viên UEF về làm việc tại đơn vị hay không?</b></label>
                 <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B12" required> Có</label>
-                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B12" required> Không</label>
-                </div>
-                <label for="txtHoTen" style="font-size: 1.2em">13. Chương trình đào tạo thể hiện cả bề rộng lẫn chiều sâu?</label>
-                <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B13" required> Có</label>
-                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B13" required> Không</label>
-                </div>
-                <label for="txtHoTen" style="font-size: 1.2em">14. Chương trình đào tạo thể hiện rõ các môn cơ bản, cơ sở, chuyên ngành và đề án cuối khóa/khóa luận/chuyên đề tốt nghiệp/luận văn/luận án?</label>
-                <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B14" required> Có</label>
-                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B14" required> Không</label>
-                </div>
-                <label for="txtHoTen" style="font-size: 1.2em">15. Nội dung chương trình đào tạo mang tính cập nhật?</label>
-                <div class="preference">
-                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="B15" required> Có</label>
-                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="B15" required> Không</label>
-                </div>
-                <hr />
-                <div class="form-wrapper">
-                    <label for="txtHoTen">Họ và Tên</label>
-                    <input id="inLop" type="text" name="txtHoTen" placeholder="Họ và Tên" class="form-control" required>
-                </div>
-                <div class="form-wrapper">
-                    <label for="txtEmail">Email</label>
-                    <input id="inEmail" type="email" name="txtEmail" placeholder="Email" class="form-control" required>
-                </div>
+                    <label style="font-size: 1.2em"><input style="font-size: 1.2em" value="Có" type="radio" name="III.6" required> Có</label>
+                    <label style="font-size: 1.2em"><input style="margin-left:150px;font-size: 1.2em" value="Có" type="radio" name="III.6" required> Không</label>
+                </div> 
                 <button id="btnDoSV" onclick="return stepSetSinhVien();" type="submit">HOÀN TẤT</button>
             </form>
-            <H1 class="js-success-message is-hidden" style="color:seagreen;margin-top: 30px; text-align: center;">XIN CHÂN THÀNH CẢM ƠN SỰ ĐÓNG GÓP QUÝ GIÁ CỦA QUÝ THẦY/CÔ</H1>
-            <H1 class="js-error-message is-hidden" style="color:seagreen;margin-top: 30px;text-align: center;">XIN CHÂN THÀNH CẢM ƠN SỰ ĐÓNG GÓP QUÝ GIÁ CỦA QUÝ THẦY/CÔ</H1>
+            <H1 class="js-success-message is-hidden" style="color:seagreen;margin-top: 30px; text-align: center;">XIN CHÂN THÀNH CẢM ƠN SỰ HỢP TÁC CỦA QUÝ ĐƠN VỊ!</H1>
+            <H1 class="js-error-message is-hidden" style="color:seagreen;margin-top: 30px;text-align: center;">XIN CHÂN THÀNH CẢM ƠN SỰ HỢP TÁC CỦA QUÝ ĐƠN VỊ!</H1>
             <div class="loading js-loading is-hidden" id="loadingOK" style="background-color: #00000054; height: 163%;">
                 <div class="loading-spinner">
-                    <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
+                    <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /></svg>
                 </div>
             </div>
         </div>
